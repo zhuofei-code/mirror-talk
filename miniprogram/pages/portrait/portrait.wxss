@@ -1,0 +1,45 @@
+.container {
+  min-height: 100vh;
+  padding: 60rpx 40rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #6a6a8a;
+  margin-top: 12rpx;
+  display: block;
+}
+
+.portrait-card {
+  background-color: #1e1e3a;
+  border-radius: 24rpx;
+  padding: 48rpx 40rpx;
+  margin-bottom: 60rpx;
+}
+
+.portrait-text {
+  font-size: 30rpx;
+  color: #d0d0e8;
+  line-height: 2;
+}
+
+.restart-btn {
+  background: transparent;
+  color: #667eea;
+  border: 2rpx solid #667eea;
+  border-radius: 50rpx;
+  padding: 20rpx 60rpx;
+  font-size: 28rpx;
+}

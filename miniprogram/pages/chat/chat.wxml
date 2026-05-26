@@ -1,0 +1,39 @@
+<view class="chat-container">
+  <scroll-view class="messages" scroll-y scroll-into-view="{{scrollToId}}" scroll-with-animation>
+    <view
+      wx:for="{{messages}}"
+      wx:key="id"
+      id="msg-{{item.id}}"
+      class="message-row {{item.role === 'assistant' ? 'left' : 'right'}}"
+    >
+      <view class="bubble {{item.role}}">
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view wx:if="{{loading}}" class="message-row left">
+      <view class="bubble assistant typing">
+        <text>...</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="input-area">
+    <view wx:if="{{isNearEnd}}" class="end-hint">
+      <text>对话即将结束，你可以继续聊或</text>
+      <text class="end-link" bindtap="onGeneratePortrait">生成你的画像</text>
+    </view>
+    <view class="input-row">
+      <input
+        class="input"
+        value="{{inputText}}"
+        bindinput="onInput"
+        bindconfirm="onSend"
+        placeholder="说点什么..."
+        placeholder-class="placeholder"
+        confirm-type="send"
+        disabled="{{loading}}"
+      />
+      <button class="send-btn" bindtap="onSend" disabled="{{loading || !inputText}}">发送</button>
+    </view>
+  </view>
+</view>

@@ -24,14 +24,38 @@ The AI interviewer is equipped with knowledge across psychology — attachment t
 
 At the end of a session, you receive a **personalized narrative portrait** — not a label, not a score, but a rich, human-readable reflection of who you are.
 
+## Project Structure
+
+```
+mirror-talk/
+├── server/                # Python backend
+│   └── app/
+│       ├── main.py        # FastAPI entry point
+│       ├── api/chat.py    # API routes
+│       ├── core/
+│       │   ├── config.py  # Settings
+│       │   └── interviewer.py  # Core interview logic
+│       └── prompts/
+│           ├── interviewer.py  # Interviewer system prompt
+│           └── portrait.py     # Portrait generation prompt
+├── miniprogram/           # WeChat Mini Program frontend
+│   ├── pages/
+│   │   ├── index/         # Landing page
+│   │   ├── chat/          # Chat interface
+│   │   └── portrait/      # Portrait display
+│   └── utils/api.js       # API client
+└── README.md
+```
+
 ## Tech Stack
 
-- Python (FastAPI)
-- LLM integration (Claude API)
+- **Backend**: Python, FastAPI, Claude API (Anthropic)
+- **Frontend**: WeChat Mini Program
+- **Architecture**: Mini Program (chat UI) → FastAPI (interview logic) → Claude (AI interviewer)
 
 ## Status
 
-🚧 Early stage — concept validated, building the first prototype.
+Early stage — first prototype scaffolded.
 
 ## License
 

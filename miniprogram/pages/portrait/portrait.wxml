@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="header">
+    <text class="title">你的画像</text>
+    <text class="subtitle">Mirror Talk</text>
+  </view>
+  <view class="portrait-card">
+    <text class="portrait-text">{{portrait}}</text>
+  </view>
+  <button class="restart-btn" bindtap="onRestart">再来一次</button>
+</view>

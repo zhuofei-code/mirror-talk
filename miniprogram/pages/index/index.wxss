@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60rpx;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+
+.title {
+  font-size: 72rpx;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 4rpx;
+  display: block;
+}
+
+.subtitle {
+  font-size: 32rpx;
+  color: #8888aa;
+  margin-top: 20rpx;
+  display: block;
+}
+
+.description {
+  text-align: center;
+  font-size: 28rpx;
+  color: #6a6a8a;
+  line-height: 2;
+  margin-bottom: 80rpx;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 50rpx;
+  padding: 24rpx 80rpx;
+  font-size: 32rpx;
+  letter-spacing: 4rpx;
+}

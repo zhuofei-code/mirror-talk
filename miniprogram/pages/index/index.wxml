@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="hero">
+    <text class="title">Mirror Talk</text>
+    <text class="subtitle">一面会追问的镜子</text>
+  </view>
+  <view class="description">
+    <text>这不是一个测试。\n没有标准答案，没有类型标签。\n只有一场属于你的对话。</text>
+  </view>
+  <button class="start-btn" bindtap="onStart">开始对话</button>
+</view>
